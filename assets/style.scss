@@ -1,0 +1,122 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Color variables
+$red: #ED7D18;
+$red-small: #FF6600;
+// $red: #E74727;
+// $red-small: #DC3918;
+
+// Config
+$color-dot-accent: $red !default;
+$color-text-accent: $red !default;
+$color-code: $red-small !default;
+$color-nav-link: $red !default;
+$color-primary-link: $red !default;
+
+
+// Import partials from `sass_dir` and set theme here
+@import
+        "theme-{{ site.theme_color | default: "black" }}.scss"
+;
+
+
+#title {
+        // padding-top: 30vh;
+        font-size: 4vmin;
+}
+
+.h0 {
+        font-size: 15vmin;
+    }
+
+.py-4 {
+        padding-top: 4vmin;
+        padding-bottom: 4vmin;
+    }
+
+// Left Margin on the header links
+// .ml-lg-2 {
+//         margin-left: 2.3vmin;
+//     }
+
+// .px-2 {
+//         height: 100px;
+//         position: relative;
+//     }
+
+// .inline-block {
+//         display: inline-block;
+//         vertical-align: bottom;
+//     }
+
+// .right {
+//         // background:gray;
+//         height:100px;
+//         position: relative;
+//     }
+
+// ul {
+//         margin:0;
+//         padding:0;
+//         // list-style:none;
+//         // position: absolute;
+//         bottom: 0px;
+//     }
+
+
+.px-2 {
+        // background-color: red;
+        height: 60px;
+        width: 100%;
+        position: relative;
+}
+
+.left {
+        position: absolute; 
+        bottom: 0px;
+        left: 20px;
+        // margin-bottom: 0px;
+}
+.right {
+        position: absolute; 
+        bottom: 0px;
+        right: 20px;
+        margin-bottom: 10px;
+}
+
+.mb-lg-1 {
+        // padding-top: 5px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+.py-1 {
+        // padding-top: 8px;
+        padding-bottom: 5px;
+    }
+
+// .right {
+//         // background:gray;
+//         height:40px;
+//         position: relative;
+//     }
+
+// ul {
+//         margin:0;
+//         padding:0;
+//         // list-style:none;
+//         position: absolute;
+//         bottom: 0px;
+//     }
+    
+// ul li {
+//         line-height:28px;
+//         // background:red;
+//         // color:#fff;
+//         // margin:0 20px 0 0;
+//         float:left;
+//     }
