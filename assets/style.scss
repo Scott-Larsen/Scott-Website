@@ -4,6 +4,10 @@
 @charset "utf-8";
 
 
+// // Large breakpoint
+// $breakpoint-lg: 400px;
+
+
 // Color variables
 $red: #ED7D18;
 $red-small: #FF6600;
@@ -38,56 +42,6 @@ $color-primary-link: $red !default;
         padding-bottom: 4vmin;
     }
 
-// Left Margin on the header links
-// .ml-lg-2 {
-//         margin-left: 2.3vmin;
-//     }
-
-// .px-2 {
-//         height: 100px;
-//         position: relative;
-//     }
-
-// .inline-block {
-//         display: inline-block;
-//         vertical-align: bottom;
-//     }
-
-// .right {
-//         // background:gray;
-//         height:100px;
-//         position: relative;
-//     }
-
-// ul {
-//         margin:0;
-//         padding:0;
-//         // list-style:none;
-//         // position: absolute;
-//         bottom: 0px;
-//     }
-
-
-.px-2 {
-        // background-color: red;
-        height: 60px;
-        width: 100%;
-        position: relative;
-}
-
-.left {
-        position: absolute; 
-        bottom: 0px;
-        left: 20px;
-        // margin-bottom: 0px;
-}
-.right {
-        position: absolute; 
-        bottom: 0px;
-        right: 20px;
-        margin-bottom: 10px;
-}
-
 .mb-lg-1 {
         // padding-top: 5px;
         padding-bottom: 0px;
@@ -99,24 +53,40 @@ $color-primary-link: $red !default;
         padding-bottom: 5px;
     }
 
-// .right {
-//         // background:gray;
-//         height:40px;
-//         position: relative;
-//     }
+.mr-2 {
+        margin-right: 2.5vmin;
+    }
 
-// ul {
-//         margin:0;
-//         padding:0;
-//         // list-style:none;
-//         position: absolute;
-//         bottom: 0px;
-//     }
-    
-// ul li {
-//         line-height:28px;
-//         // background:red;
-//         // color:#fff;
-//         // margin:0 20px 0 0;
-//         float:left;
-//     }
+
+@media screen and (min-width: 700px) {
+
+.mr-2 {
+        margin-right: 10px;
+}
+
+.px-2 {
+        // background-color: red;
+        height: 60px;
+        width: 100%;
+        position: relative;
+}
+
+.left {
+        position: absolute; 
+        bottom: 0px;
+        left: 2vmin;
+        // margin-bottom: 0px;
+}
+.right {
+        position: absolute; 
+        bottom: 0px;
+        right: 2vmin;
+        margin-bottom: 10px;
+}
+    }
+
+
+// Override's width 100% in theme
+@media (max-width: $breakpoint-lg) {
+        .sm-width-full { width: auto !important; }
+        }
