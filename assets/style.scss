@@ -28,10 +28,44 @@ $color-primary-link: $red !default;
 ;
 
 
-#title {
+nav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding-top: 1.5vmin;
+        padding-bottom: 1.5vmin;
+        // padding-left: 16px;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 1;
+      }
+      
+      /* Change the color of links on hover */
+      nav a:hover {
+        color: black;
+      }
+      
+      /* Add a color to the active/current link */
+      .topnav a.active {
+        color: red;
+      }
+      
+      /* Right-aligned section inside the top navigation */
+      .topnav-right {
+        float: right;
+        margin-top: 10px;
+      }
+
+
+.title {
         // padding-top: 30vh;
-        font-size: 4vmin;
+        font-size: 2rem;
 }
+
+.px-2 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 .h0 {
         font-size: 15vmin;
@@ -57,6 +91,17 @@ $color-primary-link: $red !default;
         margin-right: 2.5vmin;
     }
 
+// .px-2 {
+//         height: ;
+// }
+
+.container {
+        max-width: 52em;
+    }
+
+.prose p, .prose ol, .prose ul {
+        width: 100%;
+    }
 
 @media screen and (min-width: 700px) {
 
@@ -64,21 +109,21 @@ $color-primary-link: $red !default;
         margin-right: 10px;
 }
 
-.px-2 {
-        // background-color: red;
-        height: 60px;
-        width: 100%;
-        position: relative;
-}
+// .px-2 {
+//         // background-color: red;
+//         height: 60px;
+//         width: 100%;
+//         position: relative;
+// }
 
 .left {
-        position: absolute; 
+        // position: absolute; 
         bottom: 0px;
         left: 2vmin;
-        // margin-bottom: 0px;
+        margin-bottom: 0px;
 }
 .right {
-        position: absolute; 
+        // position: absolute; 
         bottom: 0px;
         right: 2vmin;
         margin-bottom: 10px;
