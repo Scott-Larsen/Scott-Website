@@ -63,3 +63,9 @@ google_analytics: UA-2211925-1
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+    
