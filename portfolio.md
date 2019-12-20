@@ -4,12 +4,14 @@ layout: page
 title: Portfolio
 ---
 
+<div class="projects">
   {% for portfolio in site.portfolio %}
-  ![{{ portfolio.title }}]({{ site.baseurl }}/images/portfolio/{{ portfolio.image}})
-    <h2>
-    <a href="{% if portfolio.ext_url %} {{ portfolio.ext_url }} {% else %} {{ portfolio.url | prepend: site.baseurl }} {% endif %}" {% if portfolio.ext_url %}target="_blank"{% endif %}>
-    <!-- <a href="{{ portfolio.url | prepend: site.baseurl }}"> -->
-      {{ portfolio.title }}</a>
-      {{ portfolio.excerpt }}
+  <div class="project">
+  <a class="projectImg" href="{% if portfolio.ext_url %} {{ portfolio.ext_url }} {% else %} {{ portfolio.url | prepend: site.baseurl }} {% endif %}" {% if portfolio.ext_url %}target="_blank"{% endif %}><img src="{{ site.baseurl }}/images/portfolio/{{ portfolio.image}}" width="300" height="300" alt="{{ portfolio.title }}"></a>
+  <h2>
+    <a class="projTitle" href="{% if portfolio.ext_url %} {{ portfolio.ext_url }} {% else %} {{ portfolio.url | prepend: site.baseurl }} {% endif %}" {% if portfolio.ext_url %}target="_blank"{% endif %}>{{ portfolio.title }}</a>
       </h2>
+      <div class="projSubTitle"> {{ portfolio.excerpt }} </div>
+      </div>
   {% endfor %}
+</div>
