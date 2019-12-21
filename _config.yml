@@ -30,7 +30,7 @@ description: Python Developer in LA
 avatar: https://avatars1.githubusercontent.com/u/25908816?s=460&v=4
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://ScottLarsen.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: scottlarsen
 github_username:  Scott-Larsen
 
