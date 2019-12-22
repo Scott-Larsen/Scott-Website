@@ -27,13 +27,11 @@ $color-primary-link: $red !default;
 
 
 nav a {
-        float: left;
         color: black;
-        text-align: center;
-        padding-top: 1.5vmin;
-        padding-bottom: 1.5vmin;
+        padding-top: 4vmin;
+        padding-bottom: .1vmin;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1;
       }
       
@@ -49,13 +47,23 @@ nav a {
       
       /* Right-aligned section inside the top navigation */
       .topnav-right {
-        float: right;
-        margin-top: 10px;
+        // float: right;
+        // float: left;
+        text-align: center;
+        padding-bottom: 3px;
       }
+
+      .topnav-right .list-item {
+        display: inline-block;
+    }
 
 
 .title {
         font-size: 2rem;
+}
+
+align-left {
+        text-align: left;
 }
 
 .profilePhoto {
@@ -97,7 +105,10 @@ shape-outside: circle;
     }
 
 .mr-2 {
-        margin-right: 2.5vmin;
+        margin: 0 .5vmin;
+        padding: 0;
+        // margin-left: .5vmin;
+        // margin-right: .5vmin;
     }
 
 
@@ -132,7 +143,7 @@ shape-outside: circle;
       }
       
 .project {
-        max-width: 370px;
+        max-width: 360px;
         padding: 70px 20px 20px 20px;
         display: inline-block;
         vertical-align: top;
@@ -140,7 +151,7 @@ shape-outside: circle;
 
 .project img {
         border: 1px solid black;
-        margin: 0 10px;
+        margin: 0px;
 }
 
 .projTitle  {
@@ -151,7 +162,7 @@ shape-outside: circle;
         border: 0px solid black;
       }
 
-      .project h2 {
+.project h2 {
         margin-top: .25em;
 }
 
@@ -166,25 +177,48 @@ shape-outside: circle;
 
 
 
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
 
-.mr-2 {
-        margin-right: 10px;
-}
+                
+        nav a {
+                float: left;
+                font-size: 20px;
+                padding-top: 1.5vmin;
+                padding-bottom: 1.5vmin;
+        }
+        
+        .topnav-right {
+                margin-top: 22px;
+                float: right;
+                // margin-top: 10px;
+            }
 
+        .brNoDisplay {
+                display: none;
+        }
 
-.left {
-        // position: absolute; 
-        bottom: 0px;
-        left: 2vmin;
-        margin-bottom: 0px;
-}
-.right {
-        // position: absolute; 
-        bottom: 0px;
-        right: 2vmin;
-        margin-bottom: 10px;
-}
+        .mr-2 {
+                margin: 0 1.4vmin;
+                // margin-right: 2.5vmin;
+                // margin-left: 2.5vmin;
+            }
+
+// .mr-2 {
+//         margin-right: 10px;
+// }
+
+// .left {
+//         // position: absolute; 
+//         bottom: 0px;
+//         left: 2vmin;
+//         margin-bottom: 0px;
+// }
+// .right {
+//         // position: absolute; 
+//         bottom: 0px;
+//         right: 2vmin;
+//         margin-bottom: 10px;
+// }
     }
 
 
@@ -192,10 +226,3 @@ shape-outside: circle;
 @media (max-width: $breakpoint-lg) {
         .sm-width-full { width: auto !important; }
         }
-
-// Break navbar on small screens
-@media only screen and (min-width: 768px) { 
-        .brNoDisplay {
-                display: none;
-        }
-}
