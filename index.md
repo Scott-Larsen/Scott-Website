@@ -4,7 +4,7 @@ layout: page
 title: About
 ---
 
-<img width="300" alt="Scott Larsen Portrait" style="float: right; border-radius: 50%; padding:7px 0 5px 12px;" src="https://avatars1.githubusercontent.com/u/25908816?s=460&v=4" />
+<img class="profilePhoto" alt="Scott Larsen Portrait" src="https://avatars1.githubusercontent.com/u/25908816?s=460&v=4" />
 Hi, I'm Scott, a junior python developer currently located in Los Angeles and looking for my first role.  While it would be great to find something local - Pasadena, downtown Los Angeles, Glendale, San Gabriel Valley, San Fernando Valley, Culver City - I'm willing to relocate for the right opportunity and would be particularly tempted by PDX, SFO, NYC, PHL, EUG, SAN, SEA or just about anywhere internationally.  My work has been across too many domains in getting up to speed with Python but I'm particularly interested in computer vision and projects using OpenCV to manipulate and gain knowledge from images and videos.
 
 ### Contact me

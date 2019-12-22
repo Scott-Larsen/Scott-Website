@@ -58,6 +58,21 @@ nav a {
         font-size: 2rem;
 }
 
+.profilePhoto {
+        width: 55%;
+        max-width:314px !important;
+        float: right;
+        vertical-align:middle;
+        border-radius: 50%;
+        padding:7px;
+        margin: 0 2vw 2vw 2vw;
+        shape-outside: circle();
+}
+
+.shape {
+shape-outside: circle;
+}
+
 .px-2 {
         padding-left: 10px;
         padding-right: 10px;
@@ -177,3 +192,10 @@ nav a {
 @media (max-width: $breakpoint-lg) {
         .sm-width-full { width: auto !important; }
         }
+
+// Break navbar on small screens
+@media only screen and (min-width: 768px) { 
+        .brNoDisplay {
+                display: none;
+        }
+}
