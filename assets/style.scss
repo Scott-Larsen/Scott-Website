@@ -47,7 +47,6 @@ nav a {
       
       /* Right-aligned section inside the top navigation */
       .topnav-right {
-        // float: right;
         // float: left;
         text-align: center;
         padding-bottom: 3px;
@@ -62,8 +61,8 @@ nav a {
         font-size: 2rem;
 }
 
-align-left {
-        text-align: left;
+.align-left {
+        float: left;
 }
 
 .profilePhoto {
@@ -173,9 +172,13 @@ shape-outside: circle;
         padding: 0px;
         border: 0px;
       }
+      
 
-
-
+@media (max-width: 699px) {
+      .topnav-right {
+        clear: both;
+      }
+}
 
 @media (min-width: 700px) {
 
@@ -186,6 +189,10 @@ shape-outside: circle;
                 padding-top: 1.5vmin;
                 padding-bottom: 1.5vmin;
         }
+
+        // .align-left {
+        //         float: left;
+        // }
         
         .topnav-right {
                 margin-top: 22px;
