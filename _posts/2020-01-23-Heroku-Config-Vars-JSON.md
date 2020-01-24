@@ -7,7 +7,7 @@ It seems like a problem ripe for ```<vomet>disruption</vomet>``` but for a junio
 
 Store the JSON file locally in your project folder, in my case I called it ```client_secret.JSON```, and immediately add it to your ```.gitignore``` file to make sure it doesn't get tracked/ uploaded to source control.  Next you have to 'clean' the JSON of special characters because Python's ```json.loads``` module didn't like many of the 'special characters' that were included.  This doesn't need to be done for the actual JSON file stored locally but it will be necessary for what you upload to Heroku.  You might make a new Python file in order to verify that the JSON text is clean, in which case, start it with ```import json``` and below that assign the text of your JSON to a variable (in my case ```client_secret```) as a multiline string (use three apostrophes before and after the string).  Below that you want to run it through ```json.loads``` which in my case looks like the following.
 
-![JSON Cleaning Script](../images/Config-Vars-JSON.png)
+![JSON Cleaning Script](../../../images/Config-Vars-JSON.png)
 
 
 From there you have to clean the string "JSON" to get rid of all of the newline characters and tabs/ spaces that broke the ```'private key'``` up into human-readable lines.  This takes it from ~10 shortish lines of code to one absurdly long one.  Next, at the beginning and end of the private key, delete the ```-----BEGIN PRIVATE KEY-----``` and ```-----END PRIVATE KEY-----``` (The dashes in this trips up the json module).  I'm not sure what else, if anything, had to be done but the beauty is you can run that short Python script and it will tell you the location of any other characters it's choking on.  Fix those and then it's on to the next step.
