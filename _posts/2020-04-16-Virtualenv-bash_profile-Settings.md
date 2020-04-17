@@ -20,3 +20,5 @@ source `which virtualenvwrapper.sh`
 export WORKON_HOME=$HOME/Desktop/DATA/SORT/CodingProgrammingPython/virtualenvs
 export PROJECT_HOME=$HOME/Desktop/DATA/SORT/CodingProgrammingPython
 ```
+
+Incidentally, when installing versions of Python with pyenv you can get a full list of all versions available to install by entering `pyenv install --list` in terminal.  That spits out an unwieldy list of every version but if you're only interested in installing Python 3.6-3.9 you can invoke `pyenv install --list | grep " 3\.[6789]"`.
