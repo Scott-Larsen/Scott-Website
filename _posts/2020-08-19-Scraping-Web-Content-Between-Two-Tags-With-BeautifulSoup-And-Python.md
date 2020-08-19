@@ -8,6 +8,7 @@ Putting this here in case I need it in the future and because there wasn't much 
 It seems straightforward enough, all I wanted to do was to pull the text contained within `<H2>` tags as a variable name and assign it any text that followed, up to the next set of `<H2>` tags. The problem I faced is that the website I'm scraping didn't do a good job of implementing semantic/ nested HTML so the tags between sets of `<H2>` tags could be any combination of other tags and unscrapable using built in BS4 commands.
 
 Here's an example of what I was trying to scrape:
+
 ```
 <H2>Job Property 1</H2>
     <ul>
