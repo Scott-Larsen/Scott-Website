@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Flexi Retractable Leash Opening Without Screws Or Slot
-hidden: true
+visible: 1
 ---
 
 Our neighbor's dog just chewed through their Flexi leash and our backup in the same day and I saw online countless videos about how to repair them.  Our 30 year old one was relatively straightforward to open and repair because it had exposed screws on the outside of the case.  The neighbor's, however, was only a few years old and smaller and didn't have any exposed screws nor the slot on the underside of the handle into which one could insert a screwdriver and pry it open (as seen in the online videos).  Fear not, I went around the seam with a thin metal spudger (from iPad repairs, although a metal spatula or the back side of a utility knife blade would probably also work) and worked it open so I could stick in a thin screwdriver and then a big flat-head screwdriver.  Work your way around slowly prying, while keeping the two sides relatively parallel.  So long as you don't attempt to pry it open like a clamshell you should be able to disassemble and re-assemble without issue because it's held together with metal 'ring-shanked studs.'  Refer to the online videos about how to wind the spring just enough (~2 turns) so there's a modicum of tension to pull the leash all the way back in.  Good luck.
