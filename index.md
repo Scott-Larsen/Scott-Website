@@ -5,7 +5,8 @@ title: About
 ---
 
 <img class="profilePhoto" alt="Scott Larsen Portrait" src="https://avatars1.githubusercontent.com/u/25908816?s=460&v=4" />
-I’m Scott, a junior Python developer, currently located in Los Angeles and looking for my first role. While it would be great to find something local (Pasadena, downtown Los Angeles, Glendale, San Gabriel Valley, San Fernando Valley, Culver City), I’m also willing to relocate for the right opportunity and would be particularly tempted by PDX, SFO, NYC, PHL, EUG, SAN, SEA or just about anywhere internationally. I have worked in multiple domains in Python and am particularly interested in computer vision and projects using OpenCV to manipulate and learn from images and videos. 
+
+Hi 👋, I'm Scott, a 🐍 Python Developer with HTML5, CSS3 and a bit of Javascript experience looking for my first developer role.  I would be happy to relocate, especially once the Covid pandemic has wound down.  I have experience in building websites with Flask, scraping data using Beautiful Soup and Selenium and querying GraphQL/ APIs.  Because of my background in photography I have dabbled in and would love to delve deeper into learning from and manipulating images and video with OpenCV and computer vision.
 
 ### Contact me
 
