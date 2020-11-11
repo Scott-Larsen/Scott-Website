@@ -12,8 +12,8 @@ page.previous.exclude %}
     <p>{{ page.previous.content | strip_html | truncatewords:20 }}</p>
   </a>
 </div>
-{% endunless %} {% endif %} {% if page.next.url and page.next.exclude != 'true'
-%}
+{% endunless %} {% endif %} {% if page.next.url and page.next.page.exclude !=
+'true' %}
 <div class="col-4 sm-width-full left mt-3">
   <a
     class="no-underline border-top-thin py-1 block"
