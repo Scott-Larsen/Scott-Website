@@ -1,7 +1,7 @@
 <!-- Use if you want to show previous and next for all posts. -->
 {% assign user_url = site.url | append: site.baseurl %} {% assign full_base_url
 = user_url | default: site.github.url %} {% if page.previous.url %} {% unless
-post.exclude %}
+page.previous.exclude %}
 <div class="col-4 sm-width-full left mr-lg-4 mt-3">
   <a
     class="no-underline border-top-thin py-1 block"
@@ -12,7 +12,8 @@ post.exclude %}
     <p>{{ page.previous.content | strip_html | truncatewords:20 }}</p>
   </a>
 </div>
-{% endunless %} {% endif %} {% if page.next.url %} {% unless post.exclude %}
+{% endunless %} {% endif %} {% if page.next.url %} {% unless
+page.previous.exclude %}
 <div class="col-4 sm-width-full left mt-3">
   <a
     class="no-underline border-top-thin py-1 block"
