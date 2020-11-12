@@ -10,8 +10,4 @@ I have a few posts on my (Jekyll) blog that aren't related to tech that I have h
 {% assign full_base_url = user_url | default: site.github.url %}
 {% if page.previous.url %}
 {% unless page.previous.exclude %}
-
-
-
-{% endunless %} {% endif %}
 ```
