@@ -13,7 +13,7 @@ In my case it took a little sleuthing because that code didn't exist within my l
 {% if page.previous.url %}
 {% unless page.previous.exclude %}
 
-....
+
 
 {% endunless %} {% endif %}
 ```
