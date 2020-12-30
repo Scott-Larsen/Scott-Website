@@ -47,7 +47,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output```
+          publish_dir: ./output
+```
 
 From there, the GitHub action kicks in whenever I `push` my local changes to GitHub, I think spinning up a Docker container to deal with the deploy (note I did change my default branch to `main` so make sure the 6th line matches your defauly branch name). Then you need to make sure you have a requirements.txt file in your project's folder (from the command line run `pip freeze > requirements.txt`). After the default python commands to upgrade pip and install all the required packages from `requirements.txt` you need to run the actual command for building your static site generator. In this case it is `corvid`.  The last part is the magic of peaceiris's separate gh-pages GitHub Action because it takes whatever is in the folder in the last line (`publish_dir`) and pushes it to a separate gh-pages branch within your Git(/Hub) repository (you don't have to set up the `gh-pages` branch in advance).  Incidentally, I also updated the python version to 3.9 expecting it to break but it worked fine and I'm thinking is more future proof.
 
