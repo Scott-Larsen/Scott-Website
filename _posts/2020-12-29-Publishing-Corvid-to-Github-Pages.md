@@ -55,7 +55,9 @@ From there, the GitHub action kicks in whenever I `push` my local changes to Git
 Remember earlier that I said GitHub Pages will only work with files located in your branch's home directory or a docs folder or in the base of a gh-pages branch. Well that last option is now set for us. We just have to go into our repository's page on GitHub and click on `Settings`. Scroll most of the way down the page and under `GitHub Pages` and then `Source` you want to select `Branch: gh-pages` (You can leave `/ (root)` selected). If you do select a custom domain here, GitHub will quietly add a textfile named `CNAME` to your gh-pages branch with the domain name that you entered on the first line of the file. Unfortunately, **Corvid will wipe that file out on your next deploy and disable your custom domain so you want to copy that CNAME file to your local input folder** so that it's deployed along with every future deploy. Good luck and if you have any difficulty feel free to reach out.
 
 GitHub Repository Settings Tab:
+
 ![](/images/GitHub-Repository-Settings.png)
 
 GitHub Pages Branch (gh-pages) Setting:
+
 ![](/images/GitHub-Pages-Branch.png)
