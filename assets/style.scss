@@ -20,7 +20,7 @@ $color-nav-link: $red !default;
 $color-primary-link: $red !default;
 
 // Import partials from `sass_dir` and set theme here
-@import "theme-{{ site.theme_color | default: "black" }}.scss";
+@import "theme-{{ site.theme_color | default: " black " }}.scss";
 
 nav a {
   color: black;
@@ -82,6 +82,11 @@ nav a:hover {
 
 .h0 {
   font-size: 15vmin;
+}
+
+// Remove lines from GitHub Gists
+tr {
+  border: 0px;
 }
 
 .py-4 {
