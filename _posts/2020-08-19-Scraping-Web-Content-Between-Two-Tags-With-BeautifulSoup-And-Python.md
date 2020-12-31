@@ -3,13 +3,13 @@ layout: post
 title: Scraping Text between Two Tags with Beautiful Soup
 ---
 
-Putting this here in case I need it in the future and because there wasn't much information online about how to grab the text between two tags with BeautifulSoup and Python. I think it's difficult to find a solution because most of the people who are searching for something similar can benefit from semantic/ nested HTML and just back up one layer and get `children` or `next_sibling`, etc. 
+Putting this here in case I need it in the future and because there wasn't much information online about how to grab the text between two tags with BeautifulSoup and Python. I think it's difficult to find a solution because most of the people who are searching for something similar can benefit from semantic/ nested HTML and just back up one layer and get `children` or `next_sibling`, etc.
 
 It seems straightforward enough, all I wanted to do was to pull the text contained within `<H2>` tags as a variable name and assign it any text that followed, up to the next set of `<H2>` tags. The problem I faced is that the website I'm scraping didn't do a good job of implementing semantic/ nested HTML so the tags between sets of `<H2>` tags could be any combination of other tags and unscrapable using built in BS4 commands.
 
 Here's an example of what I was trying to scrape:
 
-```
+```html
 <H2>Job Property 1</H2>
     <ul>
         <li>Some text</li>
@@ -18,12 +18,12 @@ Here's an example of what I was trying to scrape:
 <H2>Job Property 2</H2>
     <p>Some more text</p>
 <H2>Job Property 3</H2>
-    Some more text</br>
-``` 
+    Some more text</ br>
+```
 
 What I ended up with is largely based on [Zrog's](https://stackoverflow.com/users/6454584/zroq) answer to a [question on StackOverflow](https://stackoverflow.com/questions/42820342/get-text-in-between-two-h2-headers-using-beautifulsoup) so they deserve most of the credit. I suspect there's a better way around this so please offer any feedback you have so we can get the best info out there.
 
-```
+```python
     jobDetails = soup.find("div", class_="job-description")
     jobDescription = {}
     for header in jobDetails.find_all('h2'):

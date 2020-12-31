@@ -9,7 +9,7 @@ Corvid publishes its HTML files to an `output` folder by default and allows you 
 
 It took a while to find a good resource but [peaceiris](https://twitter.com/piris314) has an excellent write-up on writing GitHub Actions in many languages for deploying static site generated websites at [dev.to](https://dev.to/peaceiris/deploy-to-github-pages-with-github-actions-for-static-site-generator-1mo6). So no longer was I simply renaming a folder but their action automates the deployment process entirely! I no longer have to build the files locally, change the name of the deployed folder and then push that to GitHub. Now I just make whatever changes are needed to the source files locally and push my `main` branch to GitHub. The whole process starts with the following GitHub Action/ YAML code and deploying it is done by saving it to a `.yml` file in your default Git branch two folders deep in a folder structure like `.github/workflows/NameOfYourChoice.yml` (the first folder is really `.github` and I think you can name the final filename whatever you'd like - mine is `publishingCorvid.yml`)
 
-```
+```yaml
 name: github pages
 
 on:
@@ -54,14 +54,10 @@ From there, the GitHub action kicks in whenever I `push` my local changes to Git
 
 Remember earlier that I said GitHub Pages will only work with files located in your branch's home directory or a docs folder or in the base of a gh-pages branch. Well that last option is now set for us. We just have to go into our repository's page and specify the gh-pages branch as the source. Go to your project's repository on GitHub and click on `Settings`.
 
-GitHub Repository Settings Tab:
-
-![](/images/GitHub-Repository-Settings.png)
+![GitHub Repository Settings Tab](/images/GitHub-Repository-Settings.png)
 
 Scroll most of the way down the page and under `GitHub Pages` and then `Source` you want to select `Branch: gh-pages` (You can leave `/ (root)` selected).
 
-GitHub Pages Branch (gh-pages) Setting:
-
-![](/images/GitHub-Pages-Branch.png)
+![GitHub Pages Branch (gh-pages) Setting](/images/GitHub-Pages-Branch.png)
 
 If you do select a custom domain here, GitHub will quietly add a textfile named `CNAME` to your gh-pages branch with the domain name that you entered on the first line of the file. Unfortunately, **Corvid will wipe that file out on your next deploy and disable your custom domain so you want to copy that CNAME file to your local input folder** so that it's deployed along with every future deploy. Good luck and if you have any difficulty feel free to reach out.
