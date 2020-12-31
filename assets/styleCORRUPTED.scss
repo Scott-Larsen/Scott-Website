@@ -1,0 +1,238 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// // Large breakpoint
+// $breakpoint-lg: 400px;
+
+// Color variables
+// $red: #ED7D18;
+$red: #e47815;
+$red-small: #ff6600;
+
+// Config
+$color-dot-accent: $red !default;
+$color-text-accent: $red !default;
+$color-code: $red-small !default;
+$color-nav-link: $red !default;
+$color-primary-link: $red !default;
+
+// Import partials from `sass_dir` and set theme here
+@import "theme-{{ site.theme_color | default: " black " }}.scss";
+
+nav a {
+  color: black;
+  padding-top: 4vmin;
+  padding-bottom: 0.1vmin;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  color: red;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  // float: left;
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.topnav-right .list-item {
+  display: inline-block;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.align-left {
+  float: left;
+}
+
+.profilePhoto {
+  width: 55%;
+  max-width: 314px !important;
+  float: right;
+  vertical-align: middle;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 0 2vw 2vw 2vw;
+  shape-outside: circle();
+}
+
+.shape {
+  shape-outside: circle;
+}
+
+.px-2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.h0 {
+  font-size: 15vmin;
+}
+
+.py-4 {
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+}
+
+.mb-lg-1 {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.py-1 {
+  padding-bottom: 5px;
+}
+
+.mr-2 {
+  margin: 0 0.5vmin;
+  padding: 0;
+  // margin-left: .5vmin;
+  // margin-right: .5vmin;
+}
+
+.container {
+  max-width: 52em;
+}
+
+.prose p,
+.prose ol,
+.prose ul {
+  width: 100%;
+}
+
+/* Gets rid of lines in GitHub Gists */
+.prose table tr {
+  border: 0px;
+}
+
+// Projects Page (Portfolio)
+.Projects .col-4 {
+  margin: auto;
+}
+
+.Projects header {
+  text-align: center;
+}
+
+.Projects .container {
+  max-width: 100%;
+}
+
+.projectBoxes {
+  // max-width: 90em;
+  // clear: both;
+  text-align: center;
+  // min-width: 308px;
+}
+
+.project {
+  max-width: 360px;
+  padding: 70px 20px 20px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.project img {
+  border: 1px solid black;
+  margin: 0px;
+}
+
+.projTitle {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  height: 30px;
+  border: 0px solid black;
+}
+
+.project h2 {
+  margin-top: 0.25em;
+}
+
+.projSubTitle {
+  text-align: center;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+// Code snippet boxes with triple backticks
+.highlight {
+  width: 94%;
+  margin-left: 3%;
+}
+
+@media (max-width: 699px) {
+  .topnav-right {
+    clear: both;
+  }
+}
+
+@media (min-width: 700px) {
+  nav a {
+    float: left;
+    font-size: 20px;
+    padding-top: 1.5vmin;
+    padding-bottom: 1.5vmin;
+  }
+
+  // .align-left {
+  //         float: left;
+  // }
+
+  .topnav-right {
+    margin-top: 22px;
+    float: right;
+    // margin-top: 10px;
+  }
+
+  .brNoDisplay {
+    display: none;
+  }
+
+  .mr-2 {
+    margin: 0 1.4vmin;
+    // margin-right: 2.5vmin;
+    // margin-left: 2.5vmin;
+  }
+
+  // .mr-2 {
+  //         margin-right: 10px;
+  // }
+
+  // .left {
+  //         // position: absolute;
+  //         bottom: 0px;
+  //         left: 2vmin;
+  //         margin-bottom: 0px;
+  // }
+  // .right {
+  //         // position: absolute;
+  //         bottom: 0px;
+  //         right: 2vmin;
+  //         margin-bottom: 10px;
+  // }
+}
+
+// Override's width 100% in theme
+@media (max-width: $breakpoint-lg) {
+  .sm-width-full {
+    width: auto !important;
+  }
+}
