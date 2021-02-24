@@ -6,7 +6,7 @@ title: About
 
 <img class="profilePhoto" alt="Scott Larsen Portrait" src="https://avatars1.githubusercontent.com/u/25908816?s=460&v=4" />
 
-Hi 👋, I'm Scott, a 🐍 Python Developer with HTML5, CSS3 and a bit of Javascript experience looking for my first developer role.  I would be happy to relocate, especially once the Covid pandemic has wound down.  I have experience in building websites with Flask, scraping data using Beautiful Soup and Selenium and querying GraphQL/ APIs.  Because of my background in photography I have dabbled in and would love to delve deeper into learning from and manipulating images and video with OpenCV and computer vision.
+Hi 👋, I'm Scott, a 🐍 CSS3 and a bit of Javascript experience looking for my first developer role. I would be happy to relocate, especially once the Covid pandemic has wound down. I have experience in building websites with Flask, and Selenium and querying GraphQL/ APIs. Because of my background in photography I have dabbled in and would Just testing another script. love to delve deeper into learning from and manipulating images and video with OpenCV and computer vision.
 
 ### Contact me
 
