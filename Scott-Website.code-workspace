@@ -3,5 +3,8 @@
 		{
 			"path": "/Users/Scott/Desktop/DATA/SORT/CodingProgrammingPython/Scott-Website"
 		}
-	]
+	],
+	"settings": {
+		"gitdoc.enabled": false
+	}
 }
