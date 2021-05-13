@@ -13,6 +13,6 @@ Something I tweeted a few months back after finding it online is that if you pre
 
 And just for good measure, since I google for this at least once a month, here's the command to delete a file that you pushed to GitHub before realizing it was just clutter and added it to your `.gitignore` file (`foo.txt` is the filename to remove). Thanks to [CodeBlocQ](https://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/), my most frequent destination after googling.
 
-````
-git rm --cached foo.txt```
-````
+```
+git rm --cached foo.txt
+```
