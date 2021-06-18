@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cron Test Script
+title: VSCode not finding mypy in pyenv
 ---
 
 I kept getting an error message when trying to save Python files in VSCode and it had something to do with pyenv and mypy.
