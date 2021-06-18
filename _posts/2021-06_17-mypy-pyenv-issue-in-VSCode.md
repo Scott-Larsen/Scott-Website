@@ -3,20 +3,6 @@ layout: post
 title: VSCode not finding mypy in pyenv
 ---
 
-I kept getting an error message when trying to save Python files in VSCode and it had something to do with pyenv and mypy.
-
-Googling turned up nothing relevant so I just had to poke around. To be honest, I'm still not perfectly clear on the issue but it seems that the default settings of mypy weren't pointed to the mypy daemon (dmypy) installed in my pyenv installations/ shims. In VScode, I went to `Code > Preferences > Extensions` and searched for `mypy`.
-
-![Main Screen, click on Account.]({{ site.baseurl }}/images/Screen Shot 2021-06-17 at 12.58.22 PM.png)
-
-From there I clicked the gear icon and selected `Extension Settings`.
-
-![Main Screen, click on Account.]({{ site.baseurl }}/images/Screen Shot 2021-06-17 at 12.58.33 PM.png)
-
-I clicked the checkbox that says `Mypy: Run Using Active Interpreter` and that seems to resolve the issue (You might get a warning to install mypy at that point).
-
-![Main Screen, click on Account.]({{ site.baseurl }}/images/Screen Shot 2021-06-17 at 1.54.09 PM.png)
-
 Alternatively, you can change the `Mypy: Dmypy Executable` setting, although this only works for me on the project folder settings, not `user` settings that I would think would apply to all of my settings. For this you need to get the path to mypy's daemon. In Terminal, from whichever folder/ virtual environment you're running type `which mypy`. In my case that returns `/Users/Scott/.pyenv/versions/3.9.1/envs/traversy_btre_project/bin/mypy` for my global pyenv/ python. If you haven't already, click the tab to take you to the project folder settings, not the default `user` settings and when you enter the path for the `Mypy: Dmypy Executable`, remember to append a `d` in front of `mypy` in your path. In my case that means `/Users/Scott/.pyenv/versions/3.9.1/envs/traversy_btre_project/bin/dmypy`.
 
 Here's the full Terminal error message before I changed the settings:
