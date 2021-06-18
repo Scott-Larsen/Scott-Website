@@ -5,8 +5,6 @@ title: Cron Test Script
 
 I kept getting an error message when trying to save Python files in VSCode and it had something to do with pyenv and mypy.
 
-![`Error running mypy in /Users/Scott/Desktop/DATA/SORT/CodingProgrammingPython/traversy_btre_project: mypy failed with error: "pyenv: dmypy: command not found". See Output panel for details.`]({{ site.baseurl }}/images/Screen Shot 2021-06-17 at 12.57.40 PM.png)
-
 Googling turned up nothing relevant so I just had to poke around. To be honest, I'm still not perfectly clear on the issue but it seems that the default settings of mypy weren't pointed to the mypy daemon (dmypy) installed in my pyenv installations/ shims. In VScode, I went to `Code > Preferences > Extensions` and searched for `mypy`.
 
 ![Main Screen, click on Account.]({{ site.baseurl }}/images/Screen Shot 2021-06-17 at 12.58.22 PM.png)
