@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Samsung TV Model # UN39EH5003F is 0531
+title: Samsung TV Model UN39EH5003F is 0531
 exclude: true
 ---
 
