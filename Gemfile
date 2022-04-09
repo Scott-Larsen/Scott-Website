@@ -29,9 +29,11 @@ end
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
 
-# GitHub Pages
-gem "github-pages"
-# gem "github-pages", group: :jekyll_plugins
+# # GitHub Pages
+# gem "github-pages"
+# # gem "github-pages", group: :jekyll_plugins
 
-# Swiss theme
-gem "jekyll-swiss"
+# # Swiss theme
+# gem "jekyll-swiss"
+
+gem "github-pages", group: :jekyll_plugins
