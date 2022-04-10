@@ -11,7 +11,13 @@ source "https://rubygems.org"
 # will install all gh-pages allowed gems
 # see : https://pages.github.com/versions/
 gem "github-pages", group: :jekyll_plugins
-gem 'jekyll-remote-theme'
+
+group :jekyll_plugins do
+  gem 'jekyll-feed', '~> 0.12'
+  gem 'jekyll-remote-theme'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+end
 
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
