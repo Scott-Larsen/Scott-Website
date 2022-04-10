@@ -36,11 +36,8 @@ github_username: Scott-Larsen
 
 # Build settings
 # theme: minima
+# theme: jekyl-swiss
 remote_theme: broccolini/swiss
-
-# theme: jekyll-swiss
-# remote_theme: broccolini/swiss
-# theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
