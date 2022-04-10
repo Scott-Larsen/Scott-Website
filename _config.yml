@@ -30,7 +30,7 @@ description:
 
 avatar: https://avatars1.githubusercontent.com/u/25908816?s=460&v=4
 
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ScottLarsen.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Scott-Larsen
 
