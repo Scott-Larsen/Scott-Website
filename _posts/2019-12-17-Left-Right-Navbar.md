@@ -1,6 +1,0 @@
----
-layout: post
-title: Left Right Navbar
----
-
-My thanks go out to W3Schools who helped me finally solve my navbar layout after fumbling with it for way too long.  It was the simplest of changes that I wanted to make - to make my name on the left side of the navbar just a little bit bigger than all of the links that are on the right.  That then threw off the formatting, particularly the responsiveness as the page shrunk for smaller screens.  I played around with every CSS property I could think of, dove into reformatting it with Flexbox and Grid and then finally found the fix on W3Schools ([https://www.w3schools.com/howto/howto_css_topnav_right.asp](https://www.w3schools.com/howto/howto_css_topnav_right.asp)).  They just put a div for the navigation links - floated right - within the nav element, just after the title link.  It's so simple that I'm not sure why it took several different google searches for me to find.  If you want to see how I adapted it for this site, the HTML is at [https://github.com/Scott-Larsen/Scott-Website/blob/master/_includes/header.html](https://github.com/Scott-Larsen/Scott-Website/blob/master/_includes/header.html) and the CSS adjustments to the Jekyll-Swiss theme are at [https://github.com/Scott-Larsen/Scott-Website/blob/master/assets/style.scss](https://github.com/Scott-Larsen/Scott-Website/blob/master/assets/style.scss).

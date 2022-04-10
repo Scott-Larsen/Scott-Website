@@ -21,7 +21,7 @@
 title: Scott Larsen
 email: Scott@ScottLarsen.com
 description:
-  Python Developer in LA
+  Python Developer in Portland, OR
 
   # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -32,15 +32,14 @@ avatar: https://avatars1.githubusercontent.com/u/25908816?s=460&v=4
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ScottLarsen.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: scottlarsen
 github_username: Scott-Larsen
 
 # Build settings
-# theme: minima
+theme: minima
 # remote_theme: broccolini/swiss
 
-theme: jekyll-swiss
-remote_theme: broccolini/swiss
+# theme: jekyll-swiss
+# remote_theme: broccolini/swiss
 # theme: jekyll-theme-minimal
 
 plugins:
