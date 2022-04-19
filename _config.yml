@@ -42,7 +42,8 @@ remote_theme: broccolini/swiss
 plugins:
   - jekyll-feed
 
-google_analytics: UA-2211925-1
+google_analytics: G-HMHSVLXV0C
+# Old google_analytics: UA-2211925-1
 
 # Exclude from processing.
 # The following items will not be processed, by default.
