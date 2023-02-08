@@ -7,7 +7,7 @@ I was working on the really good (and free!) [Real Python](https://realpython.co
 
 ```AttributeError: 'Marshmallow' object has no attribute 'SQLAlchemyAutoSchema'```
 
-It turns out that I needed to install not only `marshmallow` but also `marshmallow-sqlalchemy`. Run the following in your terminal/ shell.
+It turns out that I needed to pip install not only `marshmallow` but also `marshmallow-sqlalchemy`. Run the following in your terminal/ shell
 
 ```python3 -m pip install marshmallow-sqlalchemy```
 
