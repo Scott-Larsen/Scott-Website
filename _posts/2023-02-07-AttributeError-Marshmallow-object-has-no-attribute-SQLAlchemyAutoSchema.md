@@ -11,4 +11,4 @@ It turns out that I needed to install not only `marshmallow` but also `marshmall
 
 ```python3 -m pip install marshmallow-sqlalchemy```
 
-Thanks to [Art Chaz on Stack Overflow](https://stackoverflow.com/a/57984785) for the heads-up.
+Thanks to [Art Chaz on Stack Overflow](https://stackoverflow.com/a/57984785) for the heads up.
